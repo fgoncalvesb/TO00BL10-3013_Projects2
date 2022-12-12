@@ -1,0 +1,135 @@
+#mainBody {
+    background-color:bisque;
+  }
+
+  /* === Contact form ===*/
+  .box{
+    grid-area: box;
+    position: absolute;
+      top:  50%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      background-color: #FFF;
+      padding: 40px;
+      box-sizing: border-box;
+      border: 1px solid rgba(0,0,0,.1);
+      /* box-shadow: 0 30px 20px rgba(0,0,0,.2); */
+      box-shadow: 0 3px 60px rgba(57,73,76,0.35);
+    
+  }
+
+.box h1{
+	margin: 0 0 40px;
+	padding: 0;
+	color: #222;
+	text-transform: uppercase;
+	text-align: center;
+    font-size: 25px;
+    font-family: "Fantasy	", "Papyrus", serif;
+}
+
+.box ininput[type="submit"]put{
+	padding: 10px 0;
+	margin-bottom: 30px;
+}
+
+.box textarea{
+	height: 80px;
+	padding: 10px 0;
+	margin-bottom: 40px;
+}
+
+.box inpinput[type="submit"]ut, .box textarea {
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: none;
+	outline: none;
+	border: none;
+	border-bottom: 2px solid #999;
+}
+.box textarea{	
+	margin-bottom: 20px;
+}
+
+.box input[type="submit"]{
+    font-size: 1.1em;
+      border-bottom: none;
+      cursor: pointer;
+    background: #37a000;
+      color: #FFF;
+      margin-bottom: 0;
+      text-transform: uppercase;
+  }
+
+  /* Styiles for some buttons, including effect when you hover over them*/
+ .regularButtons {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+  }
+   
+ .regularButtons:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+
+  .styled-table {
+    position: absolute;
+      top:  10%;
+      left: 50%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.styled-table-train {
+    position: absolute;
+      top:  5%;
+      left: 50%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table-train  thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table-train  tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table-train  tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table-train  tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}

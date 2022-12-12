@@ -1,0 +1,63 @@
+<!doctype html>
+<HTML lang="en">
+	<head>
+		<title>Welcome to the To-do application!</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+    </head>
+    <body id="mainBody">
+
+
+       <!--box div is for CSS of the form and the title-->
+       <div class="box">
+
+        <h1>Get your train timetable with the help of Digitraffic!</h1>
+
+        <!--This is a normal form, similar to the ones we did for the workshops. I added some "spans" for the error messages-->
+        <form name="originDestinationForm" action="#" onsubmit="return validateOriginDestination()" 
+        method="post">
+
+        <label>Please detail your journey by using the stations short-codes. <br><br>
+
+            From station: <br>
+            <input type="text" name="originStation" required><br><br>
+            To station: <br>
+            <input type="text" name="destionationStation" required><br><br>
+            <input type="submit" value="Get Timetables">
+            <span id="originDestinationFeedback"></span>
+        </label>
+
+      
+
+        </form>
+
+        <br><br>
+
+
+
+
+            <!--List of buttons. I used classes for CSS and created just some IDs for some specific cases. Each button has its Span-->
+        <label>
+          <button onclick="getStations()" class="regularButtons">Get station names and codes</button> 
+          <span id="getStationsFeedback"></span>
+        </label>
+          <br><br>
+        <label>
+          <button onclick="removeStations()" class="regularButtons">Remove station codes list</button> 
+          <span id="completeItemsFeedback"></span>
+        </label>
+        
+        <br><br>
+    
+        <div id="errorResponse"></div>
+
+      </div>
+
+        <div id="tableSchedule"></div>
+        <div id="stationsTable"></div><br><br>
+        <div id="chosenTrain"></div><br><br>
+
+    </body>
+
+    </html>
