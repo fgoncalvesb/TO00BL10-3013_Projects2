@@ -28,16 +28,11 @@
             <span id="originDestinationFeedback"></span>
         </label>
 
-      
-
         </form>
 
         <br><br>
 
-
-
-
-            <!--List of buttons. I used classes for CSS and created just some IDs for some specific cases. Each button has its Span-->
+        <!--List of buttons. I used classes for CSS and created just some IDs for some specific cases. Each button has its Span-->
         <label>
           <button onclick="getStations()" class="regularButtons">Get station names and codes</button> 
           <span id="getStationsFeedback"></span>
@@ -50,10 +45,12 @@
         
         <br><br>
     
+        <!--Created a special DIV for when one of the API's return an error (when station codes aren't correct)-->
         <div id="errorResponse"></div>
 
       </div>
 
+      <!-- Divs as to have a placeholder for what the API's return-->
         <div id="tableSchedule"></div>
         <div id="stationsTable"></div><br><br>
         <div id="chosenTrain"></div><br><br>
