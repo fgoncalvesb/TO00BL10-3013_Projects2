@@ -1,7 +1,7 @@
 # TO00BL10-3013_Projects2
 This is a repository for the second project of the Dynamic Web Applications with Javascript TO00BL10-3013 Laurea course
 
-Project 1: To-do List
+Project 2: get train Timetables from Digitraffic
 By Facundo Goncalves Borrega
 
 ## Deployed in Github
