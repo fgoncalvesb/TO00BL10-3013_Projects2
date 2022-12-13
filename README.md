@@ -7,6 +7,9 @@ By Facundo Goncalves Borrega
 ## Deployed in Github
 - https://fgoncalvesb.github.io/TO00BL10-3013_Projects2/
 
+## Swagger
+https://rata.digitraffic.fi/swagger/#/live-trains
+
 ---
 
 ## Application description
