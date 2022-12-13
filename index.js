@@ -93,6 +93,9 @@ function getTimetables() {
 
                     // I "clean" the screen in case there is another table
                     removeStations();
+                    
+                    // I also remove, in case there is, any api error message from before
+                    removeErrorResponse();
 
                     // I put the table on the screen
                     document.getElementById("tableSchedule").innerHTML = '<table class="styled-table"><thead><tr><th>Station</th><th>UI Codet</th><th>Country</th><th>Train type</th><th>Train stops at station</th><th>Commercial stop</th><th>Commercial track</th><th>Cancelled</th><th>Scheduled time</th><th>Trian number</th></tr></thead><tbody>'+content+'</tbody></table>';
@@ -137,6 +140,7 @@ function getStations(){
 
                     removeTableSchedule();
                     removeTableTrain();
+                    removeErrorResponse();
                     document.getElementById("stationsTable").innerHTML = '<table class="styled-table"><thead><tr><th>Station name</th><th>Station type</th><th>Station short-code</th></tr></thead><tbody>'+content+'</tbody></table>';
         
                     }
@@ -161,5 +165,11 @@ function removeTableSchedule(){
 function removeTableTrain(){
 
     document.getElementById("chosenTrain").innerHTML = '';
+
+}
+
+function removeErrorResponse(){
+
+    document.getElementById("errorResponse").innerHTML = '';
 
 }
